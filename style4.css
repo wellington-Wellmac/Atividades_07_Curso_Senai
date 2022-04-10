@@ -1,0 +1,34 @@
+:root {
+    --img-largura: 95%;
+    --img-bandeira: url(/Atividade_04/bandeira-brasil.jpg);
+    --img-escudo: url(/Atividade_04/escudo-brasil.png);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-image: var(--img-bandeira);
+        background-repeat: no-repeat;
+        background-size: var(--img-largura);
+        background-position: center;
+        background-position-y: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: var(--img-escudo);
+        background-repeat: no-repeat;
+        background-size: var(--img-largura);
+        background-position: center;
+        background-position-y: 60px;
+    }
+}

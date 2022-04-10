@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+nav, footer {
+    background: rgb(148, 0, 0);
+    height: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+div{
+    width: 150px;
+    height: 150px;
+    background: green;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.quadrado1 {
+    margin: 40px;
+    animation: go-back 1s infinite alternate;
+}
+
+.quadrado1:hover {
+    animation: none;
+    width: 95%;
+    transition: 2s;
+    background: linear-gradient(red, yellow);
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(500px);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+.quadrado2 {
+    position: fixed;
+    bottom: 15%;
+    left: 70%;
+    animation: bounce 1s infinite alternate;
+}
+
+.quadrado2:hover {
+    animation: none;
+    height: 78%;
+    transition: 2s;
+    background: linear-gradient(red, yellow);
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-500px);
+    }
+    
+}
+
+.quadrado3 {
+    position: fixed;
+    bottom: 15%;
+    margin-left: 40px;
+}
+
+.quadrado3:hover {
+    border-radius: 50%;
+    transition: 1.5s;
+    background: rgb(255, 251, 0);
+}
+
+footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+}
+
+address {
+    justify-content: center;
+    align-items: center;
+}
+
+address > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.486);
+}

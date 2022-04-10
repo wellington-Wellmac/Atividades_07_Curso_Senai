@@ -1,0 +1,35 @@
+header {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragrafo {
+    text-indent: 5ch;
+}
+
+.mark_green {
+    background-color: rgb(0, 255, 0);
+    font-weight: bold;
+    font-style: italic;    
+}
+
+.mark_red {
+    background-color: rgb(255, 0, 0);
+}
+
+.mark_blue {
+    background-color: rgb(2, 2, 179);
+}
+
+.mark_pink {
+    background-color: rgb(253, 80, 166);
+}
+
+sup {
+    font-size: 10px;
+}
+
+figure,img {
+    margin: 10px 100px;
+    width: 450px;
+}
